@@ -40,14 +40,6 @@ public:
     bool getVersion();
     void finishedCheckingForThings(things th, QString list);
     bool isReady();
-
-    /*bool mifareCheck(QString args);
-    bool mifareNested(QString args);
-    bool mifareDump();
-    bool mifareRestore();
-    bool mifareWriteBlock(QString args);
-    bool mifareReadBlock(QString args);
-    bool mifareReadSector(QString args);*/
     bool mifare(mifareType mf, QString args);
 
 public slots:

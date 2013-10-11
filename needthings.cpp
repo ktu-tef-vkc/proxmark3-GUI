@@ -20,7 +20,6 @@ needThings::needThings(proxControl *parent)
     pc = parent;
     needed = THING_nothing;
     needed2 = THING_nothing;
-    //list = NULL;
     ver_bootrom = "";
     ver_os = "";
 }
@@ -36,9 +35,6 @@ bool needThings::setNeeded(things th)
         return false;
 
     needed = th;
-    /*if (list != NULL)
-        delete list;
-    list = new QList<QString>();*/
     emit isReady(th == THING_nothing ? true : false);
     return true;
 }
@@ -114,7 +110,5 @@ QString needThings::filterProxmark3First(QString str)
 void needThings::setToNothing()
 {
     needed = THING_nothing;
-    //delete list;
-    //list = NULL;
     emit isReady(true);
 }

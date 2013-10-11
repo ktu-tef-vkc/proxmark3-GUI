@@ -41,7 +41,6 @@ public:
     things getNeeded();
     bool setNeeded(things th);
     QString filter(QString str);
-    //QList<QString> * getList();
     void setToNothing();
 
 signals:
@@ -50,7 +49,6 @@ signals:
 private:
     proxControl *pc;
     things needed, needed2;
-    //QList<QString> *list;
 
     QString filterVersion(QString str);
     QString filterProxmark3(QString str);

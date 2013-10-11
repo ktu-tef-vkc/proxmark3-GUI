@@ -31,7 +31,6 @@ int proxControl::initialize(QString clientLocation, QString port)
 {
     nt->setNeeded(THING_proxFirstTime);
 
-    //QString program = "/home/buzzy/qtProjects/build-proxmark3-Desktop-Debug/proxmark3_gui";
     QStringList arguments;
     arguments << port << "flush";
 
